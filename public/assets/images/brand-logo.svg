@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-label="Bia's Dream">
+  <g fill="#183247">
+    <ellipse cx="53" cy="75" rx="28" ry="23"/>
+    <circle cx="23" cy="42" r="13"/><circle cx="50" cy="27" r="13"/><circle cx="78" cy="29" r="13"/><circle cx="101" cy="46" r="13"/>
+  </g>
+  <path fill="#e85f18" d="M53 91c-4-5-16-12-16-20 0-6 8-9 13-4l3 3 3-3c5-5 13-2 13 4 0 8-12 15-16 20z"/>
+  <text x="132" y="78" fill="#183247" font-family="'Great Vibes', 'Brush Script MT', cursive" font-size="68">Bia’s Dream</text>
+</svg>
