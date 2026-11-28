@@ -99,17 +99,24 @@ export default function Footer(){return (
           </li>
         </ul>
       </div>
-      <div className={"col-lg-4 col-md-6 col-sm-8 footer-list-29 mt-lg-0 mt-4 ps-lg-5"}>
+      <div className={"col-lg-2 col-md-3 col-6 footer-list-29 mt-md-0 mt-4"}>
+        <ul>
+          <h6 className={"footer-title-29"}>Legal</h6>
+          <li><Link to={"/politica-privacidade.html"}>Privacidade</Link></li>
+          <li><Link to={"/politica-cookies.html"}>Cookies</Link></li>
+          <li><Link to={"/termos-condicoes.html"}>Termos</Link></li>
+        </ul>
+      </div>
+      <div className={"col-lg-2 col-md-6 col-sm-8 footer-list-29 mt-lg-0 mt-4 ps-lg-5"}>
         <h6 className={"footer-title-29 footer-brand-title"}>
-          <img src={"/assets/images/bias-dream.svg"} alt={"Bia's Dream"} />
+          <img src={"/assets/images/footer-logo.png"} alt={"Bia's Dream"} />
         </h6>
-        <img src={"/assets/images/logomedio.jpg"} className={"img-fluid radius-image"} alt={"App Device"} />
       </div>
     </div>
     <p className={"copy-footer-29 text-center mt-5 pt-lg-3"}>
-      {"© 2025 Bia's Dream. \n\t\t\tAll rights reserved. Design by "}
+      {"© 2026 Bia's Dream. \n\t\t\tAll rights reserved. Design by "}
       <a href={"#"} target={"_blank"}>
-        {"\n\t\t\tSitesFixes"}
+        {"\n\t\t\tRafynha"}
       </a>
     </p>
   </div>
