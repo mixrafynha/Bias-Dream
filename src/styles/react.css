@@ -307,28 +307,29 @@ body,#site-header,.home-hero{font-family:'Manrope',Arial,sans-serif;-webkit-font
 .story-section{display:grid;grid-template-columns:50% 50%;align-items:center;min-height:700px;padding:78px 6vw;background:#fff url('/assets/images/hero-waves.png') center/cover no-repeat;overflow:hidden}.story-gallery{position:relative;height:590px;max-width:760px;margin:auto;width:100%}.story-photo{position:absolute;object-fit:cover;border:9px solid #fff;border-radius:36px;box-shadow:0 14px 28px rgba(24,50,71,.18)}.story-photo-main{left:3%;top:9%;width:62%;height:76%;transform:rotate(-7deg)}.story-photo-top{right:8%;top:2%;width:40%;height:48%;transform:rotate(5deg)}.story-photo-bottom{right:7%;bottom:0;width:43%;height:52%;transform:rotate(7deg)}.story-heart{position:absolute;z-index:2;top:-5%;left:12%;color:#f45b12;font:100px/1 Arial}.story-paw{position:absolute;z-index:3;bottom:4%;left:48%;display:grid;place-items:center;width:60px;height:60px;color:#f45b12;font-size:42px;transform:rotate(-10deg)}.story-copy{max-width:800px;padding:10px 3vw}.story-eyebrow{display:block;margin-bottom:16px;color:#f45b12;font:400 32px 'Great Vibes',cursive}.story-label{display:flex;align-items:center;gap:18px;color:#183b68;font:800 25px 'Manrope',sans-serif}.story-label i{display:block;width:70px;height:2px;background:#f45b12}.story-copy h2{margin:36px 0 24px;color:#12365d;font:800 clamp(38px,4vw,70px)/1.1 'Manrope',sans-serif;letter-spacing:-.055em}.story-copy h2 em{color:#f45b12;font-style:normal}.story-copy p{max-width:720px;margin:0 0 32px;color:#40536a;font:500 19px/1.65 'Manrope',sans-serif}.story-copy>a{display:inline-flex;align-items:center;gap:28px;padding:19px 34px;border-radius:999px;background:#f45b12;color:#fff;font:800 17px 'Manrope',sans-serif;text-decoration:none;box-shadow:0 10px 22px rgba(244,91,18,.22)}
 .story-photo-main{object-fit:cover;background:#fff;transform:rotate(-7deg) scale(.95)}
 @media (max-width:767px){.home-hero .home-hero-button-light{display:none!important}}
+@media (max-width:767px){#site-header,#site-header .navbar{min-height:52px!important;height:52px!important}}
 @media (max-width:767px){
-  #site-header{min-height:54px!important}
-  #site-header .navbar{min-height:54px!important}
+  #site-header{min-height:51px!important}
+  #site-header .navbar{min-height:51px!important}
 }
 @media (max-width:767px){
   #site-header{min-height:57px!important}
   #site-header .navbar{min-height:57px!important;padding:0 14px!important}
   #site-header .navbar-brand{max-width:190px!important;font-size:32px!important}
-  #site-header .navbar .navbar-brand{position:relative!important;z-index:2;width:190px!important;height:57px!important;margin:0!important;transform:translateX(-33px) scale(1.14)!important;transform-origin:left center!important;background:transparent url('/assets/images/brand-logo-final.png?v=2') center/contain no-repeat!important;font-size:0!important;display:block!important}
+  #site-header .navbar .navbar-brand{position:relative!important;z-index:2;width:190px!important;height:57px!important;margin:0!important;transform:translate(-36px,-9%) scale(1.14)!important;transform-origin:left center!important;background:transparent url('/assets/images/brand-logo-final.png?v=2') center/contain no-repeat!important;font-size:0!important;display:block!important}
   #site-header .navbar .navbar-brand>span{display:none!important}
   #site-header .navbar-toggler{font-size:19px!important}
   #site-header .navbar-collapse{padding:8px 0 13px!important}
   #site-header .nav-main .nav-link,#site-header .nav-main .react-menu{padding:8px 11px!important;font-size:12.5px!important}
 }
 @media (max-width:767px){
-  .home-hero{display:flex!important;flex-direction:column!important;align-items:stretch!important;padding:120px 20px 40px!important;min-height:0!important;overflow:hidden!important}
+  .home-hero{display:flex!important;flex-direction:column!important;align-items:stretch!important;padding:108px 20px 40px!important;min-height:0!important;overflow:hidden!important}
   .home-hero-copy{display:contents!important}
-  .home-hero h1{order:1;width:100%!important;min-width:0!important;margin:0 0 18px!important;font-size:clamp(34px,10vw,46px)!important;line-height:1!important;letter-spacing:-.055em!important;text-align:center!important}
+  .home-hero h1{order:1;width:100%!important;min-width:0!important;margin:0 0 18px!important;font-size:clamp(36px,10.5vw,48px)!important;line-height:1!important;letter-spacing:-.055em!important;text-align:center!important}
   .home-hero h1 .hero-title-line{display:inline-block!important;white-space:nowrap!important;font-size:1em!important}
   .home-hero .hero-paw-two{display:block!important;left:8%!important;right:auto!important;top:2%!important;font-size:28px!important}
   .home-hero .hero-paw-one{left:auto!important;right:5%!important;bottom:auto!important;top:18%!important}
-  .home-hero h1 strong{font-family:'Great Vibes',cursive!important;font-size:1.18em!important;font-weight:400!important;letter-spacing:0!important}
+  .home-hero h1 strong{font-family:'Great Vibes',cursive!important;font-size:1.24em!important;font-weight:400!important;letter-spacing:0!important}
   .home-hero-copy>p{order:2;width:100%!important;margin:0!important;font-size:15px!important;line-height:1.5!important;text-align:center!important}
   .home-hero-visual{order:3;width:100%!important;height:430px!important;margin:8px auto 0!important;overflow:visible!important}
   .home-hero-visual>img{width:100%!important;height:100%!important;object-fit:contain!important;transform:scale(1.12)!important}
@@ -392,3 +393,12 @@ body,#site-header,.home-hero{font-family:'Manrope',Arial,sans-serif;-webkit-font
   .story-photo-top,.story-photo-bottom{width:46%!important;height:52%!important}
 }
 @media (max-width:767px){.breed-intro-benefits{display:none!important}}
+@media screen and (max-width:767px){#site-header,#site-header .navbar{height:60px!important;min-height:60px!important}}
+@keyframes pawMenuOpen{0%{transform:rotate(0) scale(1)}50%{transform:rotate(-12deg) scale(1.18)}100%{transform:rotate(0) scale(1)}}
+@keyframes pawMenuHint{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-3px) rotate(-8deg)}}
+@media (max-width:767px){
+  #site-header .navbar-toggler{font-size:26px!important;transform:translate(10px,-10px)}
+  #site-header .navbar-toggler .fa:before{content:'\f1b0'!important;font-family:'Font Awesome 5 Free'!important;font-weight:900!important}
+  #site-header .navbar-toggler[aria-expanded="false"] .fa{display:inline-block;animation:pawMenuHint 2s ease-in-out infinite}
+  #site-header .navbar-toggler[aria-expanded="true"] .fa{display:inline-block;animation:pawMenuOpen .55s ease both}
+}
