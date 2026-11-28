@@ -1,7 +1,7 @@
 const fallbackDogs=[
-  {id:'lulu-pomerania-branco-id',image:'/assets/images/dog-brown-rug.webp',title:'Machos Spitz',status:'Disponibilidade atual',description:'Conheça os nossos machos e consulte as condições.',url:'/biasdreammachos.html'},
-  {id:'lulu-pomerania-chocolate-id',image:'/assets/images/dog-brown-gravel.webp',title:'Fêmeas Spitz',status:'Lista de interesse',description:'Veja as nossas fêmeas e manifeste o seu interesse.',url:'/biasdreamfemeas.html'},
-  {id:'lulu-pomerania-preto-id',image:'/assets/images/dog-black-blanket.webp',title:'Próximas ninhadas',status:'Reserve o seu interesse',description:'Acompanhe as ninhadas previstas da Bia’s Dream.',url:'/biasdreamninhadas.html'}
+  {id:'lulu-pomerania-branco-id',image:'/assets/images/dog-brown-rug.webp',title:'Lulu Pomerânia Chocolate',status:'Disponibilidade atual',description:'Conheça o nosso Lulu Pomerânia Chocolate.',url:'/biasdreammachos.html'},
+  {id:'lulu-pomerania-chocolate-id',image:'/assets/images/dog-brown-gravel.webp',title:'Lulu Pomerânia Merle',status:'Lista de interesse',description:'Conheça o nosso Lulu Pomerânia Merle.',url:'/biasdreamfemeas.html'},
+  {id:'lulu-pomerania-preto-id',image:'/assets/images/dog-black-blanket.webp',title:'Lulu Pomerânia Preto',status:'Reserve o seu interesse',description:'Conheça o nosso Lulu Pomerânia Preto.',url:'/biasdreamninhadas.html'}
 ];
 
 const apiUrl=import.meta.env.VITE_DOGS_API_URL||'/api/dogs';

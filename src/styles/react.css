@@ -26,25 +26,31 @@ body,#site-header,.home-hero{font-family:'Manrope',Arial,sans-serif;-webkit-font
 
 /* Reference-style commerce navigation */
 @media (min-width:992px){
-  #site-header{height:86px;background:#fff;border:1px solid #e7ebef;box-shadow:0 2px 10px rgba(24,50,71,.06)}
+  #site-header{height:86px;background:#F8FBFF!important;border:1px solid #DCE8F5;box-shadow:0 4px 20px rgba(23,48,66,.06);transition:background .25s ease,border-color .25s ease,color .25s ease}
+  #site-header .navbar{background:#F8FBFF!important;border-bottom:1px solid #DCE8F5;box-shadow:0 4px 20px rgba(23,48,66,.06)}
   #site-header .navbar{min-height:86px;padding:0 3.5vw}
   #site-header>.container-fluid{padding:0}
-  #site-header .navbar .navbar-brand{display:flex;align-items:center;gap:8px;margin-right:5px;padding-right:14px;border-right:1px solid #dfe4e8;color:#183247;font-family:'Great Vibes',cursive;font-size:clamp(38px,2.7vw,48px);font-weight:400;white-space:nowrap;line-height:1}
+  #site-header .navbar .navbar-brand{display:flex;align-items:center;gap:8px;margin-right:5px;padding-right:14px;border-right:1px solid var(--border-color-light);color:var(--heading-color);font-family:'Great Vibes',cursive;font-size:clamp(38px,2.7vw,48px);font-weight:400;white-space:nowrap;line-height:1}
   #site-header .brand-paw{position:relative;display:grid;place-items:center;width:45px;height:45px;color:#183247;font-family:Arial,sans-serif;font-size:32px}
   #site-header .brand-paw:after{content:'♥';position:absolute;left:50%;top:55%;transform:translate(-50%,-50%);color:#e85f18;font-family:Arial,sans-serif;font-size:13px;line-height:1}
   #site-header .navbar-collapse{display:flex!important;align-items:center;justify-content:flex-start}
   #site-header .nav-main{position:static;display:flex;align-items:center;justify-content:flex-start!important;gap:28px!important;width:auto;min-width:0!important;margin:0!important;transform:translateX(-25%)}
   #site-header .navbar-expand-lg .navbar-nav .nav-item{padding:0}
-  #site-header .navbar-expand-lg .navbar-nav .nav-link{display:flex;align-items:center;gap:5px;padding:7px 1px;color:#183247;font-family:'Ubuntu',Arial,sans-serif!important;font-size:16px!important;font-weight:700!important;letter-spacing:.005em;white-space:nowrap;transition:color .25s ease,background .25s ease}
-  #site-header .navbar-expand-lg .navbar-nav .nav-link i{color:#183247;font-size:18px;line-height:1}
-  #site-header .navbar-expand-lg .navbar-nav .nav-link:hover,#site-header .navbar-expand-lg .navbar-nav .nav-link.active{color:#c56d57;background:#fff2e2;border-radius:999px}
+  #site-header .navbar-expand-lg .navbar-nav .nav-link{display:flex;align-items:center;gap:5px;padding:7px 1px;color:var(--heading-color);font-family:'Ubuntu',Arial,sans-serif!important;font-size:16px!important;font-weight:700!important;letter-spacing:.005em;white-space:nowrap;transition:color .25s ease,background .25s ease}
+  #site-header .navbar-expand-lg .navbar-nav .nav-link i{color:currentColor;font-size:18px;line-height:1}
+  #site-header .navbar-expand-lg .navbar-nav .nav-link:hover,#site-header .navbar-expand-lg .navbar-nav .nav-link.active{color:var(--primary-color);background:color-mix(in srgb,var(--primary-color) 10%,var(--bg-color));border-radius:999px}
   #site-header .navbar-expand-lg .navbar-nav .nav-link::after{display:none}
   #site-header .navbar-expand-lg .navbar-nav .react-menu{font-family:'Ubuntu',Arial,sans-serif!important;font-size:16px!important;font-weight:700!important}
   #site-header .react-menu .nav-chevron{font-size:12px;margin-left:2px}
-  #site-header .nav-reserve{display:flex;align-items:center;gap:8px;margin-left:auto;padding:12px 19px;border-radius:999px;background:#e85f18;color:#fff;font:800 14px 'Manrope',Arial,sans-serif;text-decoration:none;white-space:nowrap;box-shadow:0 7px 16px rgba(232,95,24,.2);transition:transform .25s ease,background .25s ease}
+  #site-header .nav-reserve{display:flex;align-items:center;gap:8px;margin-left:auto;padding:11px 17px;border-radius:999px;background:#e85f18;color:#fff;font:800 14px 'Manrope',Arial,sans-serif;text-decoration:none;white-space:nowrap;box-shadow:0 7px 16px rgba(232,95,24,.2);transition:transform .25s ease,background .25s ease}
   #site-header .nav-reserve:hover{color:#fff;background:#d84e0d;transform:translateY(-2px)}
-  #site-header .nav-reserve i{font-size:18px}.nav-reserve span{font-size:20px}
-  #site-header .cont-ser-position{position:static;margin-left:20px;padding-left:20px;border-left:1px solid #dfe4e8}
+  #site-header .nav-reserve i{font-size:17px}.nav-reserve span{display:none}
+  #site-header .nav-login{display:flex;align-items:center;justify-content:center;gap:10px;margin-left:18px;padding:9px 16px;border:1px solid #183247;border-radius:999px;background:rgba(24,50,71,.07);color:#183247;font:800 17px 'Manrope',Arial,sans-serif;text-decoration:none;white-space:nowrap;box-shadow:0 5px 14px rgba(24,50,71,.1);transition:color .25s ease,background .25s ease,transform .25s ease,box-shadow .25s ease}
+  #site-header .nav-login:hover{color:#fff;background:#183247;transform:translateY(-2px);box-shadow:0 8px 18px rgba(24,50,71,.2)}
+  #site-header .nav-login i{font-size:21px}
+  #site-header .nav-login span{font-size:0}
+  #site-header .nav-login span::after{content:'Entrar';font-size:18px}
+  #site-header .cont-ser-position{position:static;margin-left:20px;padding-left:20px;border-left:1px solid var(--border-color-light)}
 }
 @keyframes navDrop{from{opacity:0;transform:translateY(-8px) translateX(-100px)}to{opacity:1;transform:translateY(0) translateX(-100px)}}
 @media (max-width:991px){#site-header>.container-fluid{padding-left:20px;padding-right:20px}#site-header .navbar-expand-lg .navbar-nav .nav-link{font-size:18px;padding:8px 0}.navbar-collapse.show .nav-item{animation:navItemIn .3s ease both}.navbar-collapse.show .nav-item:nth-child(2){animation-delay:.04s}.navbar-collapse.show .nav-item:nth-child(3){animation-delay:.08s}.navbar-collapse.show .nav-item:nth-child(4){animation-delay:.12s}.navbar-collapse.show .nav-item:nth-child(5){animation-delay:.16s}}
@@ -115,7 +121,7 @@ body,#site-header,.home-hero{font-family:'Manrope',Arial,sans-serif;-webkit-font
 #site-header .navbar .navbar-brand>span:last-child{font-family:'Great Vibes',cursive!important;font-weight:400}
 .spitz-shop-info{margin-top:14px!important;padding:0 4px 12px!important;background:transparent!important;border-radius:0!important}.spitz-shop-cta{position:static!important;display:flex;justify-content:space-between;width:max-content;gap:10px;margin-top:12px;background:transparent;color:#1476d8}
 .spitz-shop-card:nth-child(2) .spitz-shop-image img{object-fit:cover;background:transparent}
-@media (min-width:992px){#site-header .navbar .navbar-brand{position:relative;top:5px}}
+@media (min-width:992px){#site-header .navbar .navbar-brand{position:relative;top:5px;transform:translateY(-5%) scale(1.04)}}
 @media (min-width:992px){#site-header .navbar .navbar-brand{width:334px;height:79px;margin-right:20px;background:transparent url('/assets/images/brand-logo-final.png?v=2') center/contain no-repeat;font-size:0;display:block}#site-header .navbar .navbar-brand>span{display:none}}
 
 /* Card details: centered hierarchy below each image */
@@ -201,7 +207,86 @@ body,#site-header,.home-hero{font-family:'Manrope',Arial,sans-serif;-webkit-font
 .w3l-footer-29-main .footer-brand-title img{width:180px!important}
 .w3l-footer-29-main .footer-top-29>.footer-list-29:last-child .footer-brand-title{width:460px!important;max-width:460px!important}.w3l-footer-29-main .footer-top-29>.footer-list-29:last-child .footer-brand-title img{display:block!important;width:421px!important;max-width:421px!important;height:auto!important;max-height:350px!important;object-fit:contain!important}
 .w3l-footer-29-main .footer-contact-line:first-of-type a i:before{content:'\f3c5';font-family:'Font Awesome 5 Free';font-weight:900}
+/* Footer navigation keeps only useful and legal links. */
+.w3l-footer-29-main .footer-top-29>.footer-list-29:nth-child(2){display:none!important}
+.w3l-footer-29-main .footer-top-29>.footer-list-29:first-child>.footer-title-29{display:none!important}
+.w3l-footer-29-main .footer-top-29>.footer-list-29:first-child{position:relative}
+.w3l-footer-29-main .footer-top-29>.footer-list-29:first-child>div{position:absolute;top:-28px;right:0;margin:0!important}
+.w3l-footer-29-main ul.social{flex-direction:column!important;gap:10px!important;margin:0!important}
+.w3l-footer-29-main ul.social li a{width:38px!important;height:38px!important;font-size:16px!important}
+.w3l-footer-29-main ul.social li:nth-child(1) a{background:#1877f2!important;color:#fff!important}
+.w3l-footer-29-main ul.social li:nth-child(2) a{background:linear-gradient(135deg,#feda75,#fa7e1e 35%,#d62976 62%,#962fbf 82%,#4f5bd5)!important;color:#fff!important}
+.w3l-footer-29-main ul.social li:nth-child(3) a{background:#000!important;color:#fff!important}
+.w3l-footer-29-main .footer-top-29>.footer-list-29:last-child .footer-brand-title{width:100%!important;text-align:center!important}
+.w3l-footer-29-main .footer-top-29>.footer-list-29:last-child .footer-brand-title img{display:block!important;width:min(100%,396px)!important;max-width:100%!important;height:auto!important;margin:0 auto!important;object-fit:contain!important}
+@media (min-width:992px){.w3l-footer-29-main .footer-top-29{grid-template-columns:1.35fr .95fr .95fr 1.35fr!important}}
 @media (min-width:768px) and (max-width:991px){.w3l-footer-29-main .footer-top-29{position:relative;padding-right:30%}.w3l-footer-29-main .footer-top-29>.footer-list-29:last-child{position:absolute;right:0;top:0;width:27%;padding:0!important}.w3l-footer-29-main .footer-top-29>.footer-list-29:last-child .footer-brand-title img{width:100%!important}}
+@media (min-width:768px) and (max-width:991px){
+  .shop-hero{grid-template-columns:1fr;min-height:0;gap:42px;padding:110px 6vw 70px}
+  .shop-hero-content{max-width:760px;padding-left:0}
+  .shop-hero-image{height:430px;max-width:760px}
+  .shop-categories,.shop-featured{padding:76px 6vw 70px}
+  .category-grid,.dog-grid{grid-template-columns:repeat(2,1fr);gap:22px}
+  .shop-section-heading{gap:30px;margin-bottom:34px}
+  .spitz-shop{padding:58px 6vw 68px}
+  .spitz-shop-heading{display:block;text-align:center;margin-bottom:36px}
+  .spitz-shop-heading>div{text-align:center}
+  .spitz-contact-button{margin:22px auto 0;width:max-content}
+  .spitz-shop-grid{grid-template-columns:repeat(2,1fr);gap:28px}
+  .spitz-shop-image{height:360px}
+  .breed-intro{display:flex;flex-direction:column;min-height:0;padding:70px 6vw;text-align:center}
+  .breed-intro-copy{order:1;padding:0;max-width:760px;margin:0 auto}
+  .breed-intro-dog{order:2;width:100%;height:500px;margin-top:34px}
+  .breed-intro-benefits{order:3;display:grid;grid-template-columns:repeat(2,1fr);width:100%;padding:38px 0 0;gap:24px 18px}
+  .breed-intro-benefits>div{justify-content:center;text-align:left}
+  .breed-info-section,.story-section{grid-template-columns:1fr;min-height:0;padding:72px 6vw}
+  .breed-info-copy,.story-copy{padding:0;text-align:center;max-width:850px;margin:0 auto}
+  .breed-info-gallery,.story-gallery{order:2;width:100%;height:500px;margin-top:44px}
+  .dog-detail-inner{grid-template-columns:1fr;gap:36px;max-width:720px}
+  .dog-detail-copy{text-align:center}
+  .dog-detail-copy p{margin-left:auto;margin-right:auto}
+}
+@media (max-width:767px){
+  .breed-intro-benefits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 12px;width:100%}
+  .breed-intro-benefits>div{min-width:0;justify-content:flex-start}
+  .breed-intro-benefits b,.breed-intro-benefits small{overflow-wrap:anywhere}
+}
+@media (max-width:767px){
+  .w3l-footer-29-main{padding:40px 0 22px!important}
+  .w3l-footer-29-main .container{padding-left:22px!important;padding-right:22px!important}
+  .w3l-footer-29-main .footer-top-29{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:24px 20px!important}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29{width:auto!important;margin-top:0!important;padding:0!important;text-align:left!important}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:first-child{grid-column:1/-1!important;width:100%!important;padding-bottom:22px!important;border-bottom:1px solid rgba(33,25,21,.14)}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:nth-child(3){grid-column:1!important;grid-row:2!important}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:nth-child(4){grid-column:2!important;grid-row:2!important}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:nth-child(3),.w3l-footer-29-main .footer-top-29>.footer-list-29:nth-child(4){text-align:center!important}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:nth-child(3) ul,.w3l-footer-29-main .footer-top-29>.footer-list-29:nth-child(4) ul{padding:0!important;margin:0!important}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:nth-child(3) .footer-title-29:after,.w3l-footer-29-main .footer-top-29>.footer-list-29:nth-child(4) .footer-title-29:after{margin-left:auto!important;margin-right:auto!important}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:nth-child(3) .footer-title-29,.w3l-footer-29-main .footer-top-29>.footer-list-29:nth-child(4) .footer-title-29{font-size:20px!important}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:nth-child(3) ul li a,.w3l-footer-29-main .footer-top-29>.footer-list-29:nth-child(4) ul li a{font-size:14.3px!important}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:last-child{grid-column:1/-1!important;grid-row:3!important;width:100%!important;position:static!important;text-align:center!important}
+  .w3l-footer-29-main .footer-title-29{margin-bottom:14px!important;font-size:18px!important}
+  .w3l-footer-29-main .footer-list-29 p,.w3l-footer-29-main .footer-list-29 p a,.w3l-footer-29-main .footer-list-29 ul li a{font-size:13px!important;line-height:1.45!important}
+  .w3l-footer-29-main .footer-list-29 ul li{margin-bottom:8px!important}
+  .w3l-footer-29-main .footer-list-29 img{width:100%!important;max-width:170px!important;height:auto!important;margin:0 auto!important}
+  .w3l-footer-29-main .footer-contact-line{gap:10px!important}
+  .w3l-footer-29-main .footer-contact-line>i{width:22px!important;font-size:19px!important}
+  .w3l-footer-29-main ul.social{gap:8px!important;margin-top:20px!important}
+  .w3l-footer-29-main ul.social li a{width:38px!important;height:38px!important;font-size:16px!important}
+  .w3l-footer-29-main p.copy-footer-29{margin-top:28px!important;padding:15px 0 0!important;font-size:clamp(10px,3.3vw,13px)!important;line-height:1.5;text-align:center!important;white-space:nowrap}
+  .w3l-footer-29-main:after{right:16px;bottom:24px;width:38px;height:38px}
+  #movetop{right:16px;bottom:72px;width:32px;height:32px;font-size:18px}
+}
+@media (min-width:768px) and (max-width:991px){
+  .w3l-footer-29-main .footer-top-29{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:36px 28px!important;padding-right:0!important}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29{position:static!important;width:auto!important;padding:0!important;margin-top:0!important}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:last-child{grid-column:1/-1;text-align:center!important}
+  .w3l-footer-29-main .footer-list-29 img{width:100%!important;max-width:360px!important;height:auto!important;margin:0 auto!important}
+}
+@media (max-width:767px){
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:first-child>div{top:-28px;right:0}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:last-child .footer-brand-title img{width:min(100%,330px)!important;max-width:330px!important;margin:0 auto!important}
+}
 @media (min-width:992px){.w3l-footer-29-main .footer-top-29{display:flex;flex-wrap:nowrap!important;margin-left:0!important;margin-right:0!important}.w3l-footer-29-main .footer-top-29>.footer-list-29{padding-left:12px!important;padding-right:12px!important}.w3l-footer-29-main .footer-top-29>.footer-list-29:last-child .footer-brand-title img{width:100%!important}}
 .w3l-footer-29-main .footer-contact-line a{display:flex;align-items:flex-start;gap:16px}.w3l-footer-29-main .footer-contact-line a i{display:inline-flex;flex:0 0 28px;justify-content:center;margin-top:3px;color:#f45b12;font-size:22px}
 .w3l-footer-29-main:after{display:none!important}.w3l-footer-29-main p.copy-footer-29{border-top:0!important}
@@ -212,5 +297,98 @@ body,#site-header,.home-hero{font-family:'Manrope',Arial,sans-serif;-webkit-font
 .legal-page{min-height:70vh;padding:130px 22px 80px;background:#fff8f0}.legal-inner{max-width:900px;margin:auto;background:#fff;padding:42px 48px;border-radius:24px;box-shadow:0 12px 30px rgba(70,45,25,.08)}.legal-back{color:#f45b12;text-decoration:none;font-weight:700}.legal-inner h1{margin:24px 0 14px;color:#183247;font:800 clamp(36px,5vw,62px)/1.05 'Manrope',sans-serif}.legal-intro,.legal-inner section p{color:#526277;font:500 17px/1.7 'Manrope',sans-serif}.legal-inner h2{margin:28px 0 8px;color:#183247;font:800 24px 'Manrope',sans-serif}.legal-inner small{display:block;margin-top:34px;color:#718096;font:500 13px/1.6 'Manrope',sans-serif}@media(max-width:600px){.legal-inner{padding:28px 22px}}
 .cookie-notice{position:fixed;z-index:1200;left:24px;right:24px;bottom:24px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 22px;border:1px solid rgba(24,50,71,.12);border-radius:16px;background:#fff;box-shadow:0 12px 30px rgba(24,50,71,.18)}.cookie-notice p{margin:0;color:#40536a;font:500 14px/1.5 'Manrope',sans-serif}.cookie-notice a{color:#f45b12;font-weight:800}.cookie-notice button{border:0;border-radius:999px;padding:11px 22px;background:#f45b12;color:#fff;font:800 14px 'Manrope',sans-serif;cursor:pointer}@media(max-width:600px){.cookie-notice{left:14px;right:14px;bottom:14px;display:block}.cookie-notice button{margin-top:12px}}
 .breed-info-section{display:grid;grid-template-columns:48% 52%;align-items:center;min-height:700px;padding:82px 6vw;background:#fff}.breed-info-gallery{position:relative;height:560px;max-width:720px;margin:auto;width:100%}.breed-info-gallery img{position:absolute;object-fit:cover;border:8px solid #fff;border-radius:30px;box-shadow:0 14px 28px rgba(24,50,71,.16)}.breed-gallery-main{left:3%;top:7%;width:65%;height:84%}.breed-gallery-top{right:5%;top:3%;width:36%;height:43%}.breed-gallery-bottom{right:5%;bottom:2%;width:36%;height:43%}.breed-gallery-paw{position:absolute;z-index:2;left:1%;top:-7%;color:#f45b12;font-size:68px;transform:rotate(-12deg)}.breed-gallery-heart{position:absolute;z-index:3;right:1%;bottom:-7%;color:#f45b12;font:100px/1 Arial}.breed-info-copy{padding:12px 3vw}.breed-info-copy>span{display:block;margin-bottom:16px;color:#f45b12;font:400 32px 'Great Vibes',cursive}.breed-info-copy h2{margin:0 0 24px;color:#183b68;font:800 clamp(44px,4.2vw,72px)/1 'Manrope',sans-serif;letter-spacing:-.06em;text-decoration:underline;text-decoration-color:#f45b12;text-decoration-thickness:3px;text-underline-offset:12px}.breed-info-copy>p{max-width:760px;margin:0 0 36px;color:#526277;font:500 19px/1.55 'Manrope',sans-serif}.breed-info-benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:40px}.breed-info-benefits>div{text-align:center;color:#183b68}.breed-info-benefits i{display:grid;place-items:center;width:82px;height:82px;margin:0 auto 14px;border-radius:22px;background:#fff2e8;color:#f45b12;font-size:38px}.breed-info-benefits b{font:800 15px/1.35 'Manrope',sans-serif}.breed-info-copy>a{display:inline-flex;align-items:center;gap:25px;padding:18px 30px;border-radius:999px;background:#f45b12;color:#fff;font:800 16px 'Manrope',sans-serif;text-decoration:none;box-shadow:0 10px 22px rgba(244,91,18,.2)}
+@media (max-width:991px){
+  .breed-info-section{display:flex!important;flex-direction:column!important;align-items:stretch;min-height:0;padding:58px 22px}
+  .breed-info-copy{order:1;padding:0;text-align:center}
+  .breed-info-gallery{order:2;width:100%;height:460px;margin:38px auto 0}
+  .breed-info-benefits{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 12px;margin-bottom:30px}
+  .breed-info-copy>a{margin-bottom:0}
+}
 .story-section{display:grid;grid-template-columns:50% 50%;align-items:center;min-height:700px;padding:78px 6vw;background:#fff url('/assets/images/hero-waves.png') center/cover no-repeat;overflow:hidden}.story-gallery{position:relative;height:590px;max-width:760px;margin:auto;width:100%}.story-photo{position:absolute;object-fit:cover;border:9px solid #fff;border-radius:36px;box-shadow:0 14px 28px rgba(24,50,71,.18)}.story-photo-main{left:3%;top:9%;width:62%;height:76%;transform:rotate(-7deg)}.story-photo-top{right:8%;top:2%;width:40%;height:48%;transform:rotate(5deg)}.story-photo-bottom{right:7%;bottom:0;width:43%;height:52%;transform:rotate(7deg)}.story-heart{position:absolute;z-index:2;top:-5%;left:12%;color:#f45b12;font:100px/1 Arial}.story-paw{position:absolute;z-index:3;bottom:4%;left:48%;display:grid;place-items:center;width:60px;height:60px;color:#f45b12;font-size:42px;transform:rotate(-10deg)}.story-copy{max-width:800px;padding:10px 3vw}.story-eyebrow{display:block;margin-bottom:16px;color:#f45b12;font:400 32px 'Great Vibes',cursive}.story-label{display:flex;align-items:center;gap:18px;color:#183b68;font:800 25px 'Manrope',sans-serif}.story-label i{display:block;width:70px;height:2px;background:#f45b12}.story-copy h2{margin:36px 0 24px;color:#12365d;font:800 clamp(38px,4vw,70px)/1.1 'Manrope',sans-serif;letter-spacing:-.055em}.story-copy h2 em{color:#f45b12;font-style:normal}.story-copy p{max-width:720px;margin:0 0 32px;color:#40536a;font:500 19px/1.65 'Manrope',sans-serif}.story-copy>a{display:inline-flex;align-items:center;gap:28px;padding:19px 34px;border-radius:999px;background:#f45b12;color:#fff;font:800 17px 'Manrope',sans-serif;text-decoration:none;box-shadow:0 10px 22px rgba(244,91,18,.22)}
 .story-photo-main{object-fit:cover;background:#fff;transform:rotate(-7deg) scale(.95)}
+@media (max-width:767px){.home-hero .home-hero-button-light{display:none!important}}
+@media (max-width:767px){
+  #site-header{min-height:54px!important}
+  #site-header .navbar{min-height:54px!important}
+}
+@media (max-width:767px){
+  #site-header{min-height:57px!important}
+  #site-header .navbar{min-height:57px!important;padding:0 14px!important}
+  #site-header .navbar-brand{max-width:190px!important;font-size:32px!important}
+  #site-header .navbar .navbar-brand{position:relative!important;z-index:2;width:190px!important;height:57px!important;margin:0!important;transform:translateX(-33px) scale(1.14)!important;transform-origin:left center!important;background:transparent url('/assets/images/brand-logo-final.png?v=2') center/contain no-repeat!important;font-size:0!important;display:block!important}
+  #site-header .navbar .navbar-brand>span{display:none!important}
+  #site-header .navbar-toggler{font-size:19px!important}
+  #site-header .navbar-collapse{padding:8px 0 13px!important}
+  #site-header .nav-main .nav-link,#site-header .nav-main .react-menu{padding:8px 11px!important;font-size:12.5px!important}
+}
+@media (max-width:767px){
+  .home-hero{display:flex!important;flex-direction:column!important;align-items:stretch!important;padding:120px 20px 40px!important;min-height:0!important;overflow:hidden!important}
+  .home-hero-copy{display:contents!important}
+  .home-hero h1{order:1;width:100%!important;min-width:0!important;margin:0 0 18px!important;font-size:clamp(34px,10vw,46px)!important;line-height:1!important;letter-spacing:-.055em!important;text-align:center!important}
+  .home-hero h1 .hero-title-line{display:inline-block!important;white-space:nowrap!important;font-size:1em!important}
+  .home-hero .hero-paw-two{display:block!important;left:8%!important;right:auto!important;top:2%!important;font-size:28px!important}
+  .home-hero .hero-paw-one{left:auto!important;right:5%!important;bottom:auto!important;top:18%!important}
+  .home-hero h1 strong{font-family:'Great Vibes',cursive!important;font-size:1.18em!important;font-weight:400!important;letter-spacing:0!important}
+  .home-hero-copy>p{order:2;width:100%!important;margin:0!important;font-size:15px!important;line-height:1.5!important;text-align:center!important}
+  .home-hero-visual{order:3;width:100%!important;height:430px!important;margin:8px auto 0!important;overflow:visible!important}
+  .home-hero-visual>img{width:100%!important;height:100%!important;object-fit:contain!important;transform:scale(1.12)!important}
+  .home-hero-actions{order:4;display:flex!important;flex-direction:column!important;align-items:center!important;width:100%!important;gap:10px!important;margin:20px 0 0!important}
+  .home-hero-button{width:min(88%,240px)!important;min-width:0!important;min-height:44px!important;padding:11px 18px!important;border-radius:999px!important;font-size:14px!important;justify-content:center!important;gap:0!important}
+  .home-hero-button span{display:none!important}
+  .home-hero-button-light{display:none!important}
+}
+.breed-info-copy>span{display:block!important;margin:0 0 12px!important;color:#b4862c!important;font-family:'Great Vibes',cursive!important;font-size:38px!important;font-weight:400!important;line-height:1!important;letter-spacing:.01em;transform:translateY(-10px)}
+.story-copy h2 em{font-family:'Great Vibes',cursive!important;font-size:1.35em!important;font-weight:400!important;letter-spacing:0!important;color:#f45b12!important}
+.breed-intro-copy h2 em{font-family:'Great Vibes',cursive!important;font-size:1.18em!important;font-weight:400!important;letter-spacing:0!important}
+.breed-info-copy>a b{display:none!important}
+.breed-info-copy>a{animation:storyButtonGlow 2.8s ease-in-out infinite}
+.breed-intro-paw-one{top:140px!important;left:auto!important;right:8vw!important}
+.breed-intro-copy>a b{display:none!important}
+.breed-intro-copy>a,.spitz-contact-button,.home-hero-button,.dog-detail-button{animation:storyButtonGlow 2.8s ease-in-out infinite}
+@media (max-width:767px){.breed-intro-copy>a{justify-content:center!important;gap:0!important}}
+@media (max-width:767px){
+  .spitz-shop-cta{width:205px!important;min-height:42px!important;padding:8px 14px!important;justify-content:center!important;border-radius:999px!important;background:#183247!important;color:#fff!important;font-size:14px!important;animation:storyButtonGlow 2.8s ease-in-out infinite}
+  .spitz-shop-cta b{display:none!important}
+  .spitz-shop-cta:hover{background:#102a3d!important;color:#fff!important}
+}
+@media (min-width:992px){
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:nth-child(2){display:block!important}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:first-child>.footer-title-29{display:block!important}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:first-child>div{position:static!important;margin-top:30px!important}
+  .w3l-footer-29-main ul.social{flex-direction:row!important;gap:12px!important;margin:30px 0 0!important}
+  .w3l-footer-29-main .footer-top-29>.footer-list-29:last-child .footer-brand-title img{width:421px!important;max-width:100%!important}
+}
+@keyframes storyButtonPulse{0%,100%{transform:translateY(0);box-shadow:0 8px 18px rgba(244,91,18,.18)}50%{transform:translateY(-3px);box-shadow:0 12px 24px rgba(244,91,18,.27)}}
+@keyframes storyButtonGlow{0%,100%{transform:scale(1);filter:brightness(1);box-shadow:0 8px 18px rgba(244,91,18,.18)}50%{transform:scale(1.025);filter:brightness(1.08);box-shadow:0 12px 26px rgba(244,91,18,.3)}}
+@media (max-width:767px){#movetop{right:16px!important;bottom:72px!important;width:28px!important;height:28px!important;font-size:16px!important;box-shadow:0 5px 12px rgba(244,91,18,.22)}}
+@media (max-width:767px){
+  .breed-intro-copy>span{font-size:13px!important;letter-spacing:.08em!important}
+  .breed-intro-copy h2{font-size:clamp(34px,9vw,44px)!important;line-height:1.05!important;letter-spacing:-.04em!important;margin:16px 0 20px!important}
+  .breed-intro-copy p{font-size:15px!important;line-height:1.5!important;margin-bottom:24px!important}
+  .breed-intro-copy>a{width:230px!important;min-height:48px!important;justify-content:center!important;padding:12px 18px!important;font-size:14px!important;gap:12px!important}
+  .breed-intro-benefits{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:22px 14px!important;padding:28px 0 0!important}
+  .breed-intro-benefits>div{display:block!important;min-width:0!important;text-align:left!important}
+  .breed-intro-benefits b{font-size:15px!important;line-height:1.25!important;overflow-wrap:normal!important}
+  .breed-intro-benefits small{font-size:13px!important;line-height:1.35!important;overflow-wrap:normal!important}
+  .breed-info-copy>a{width:max-content!important;max-width:100%;margin:18px auto 0!important;padding:12px 18px!important;gap:12px!important;font-size:14px!important;line-height:1.25!important}
+  .breed-info-copy h2{font-size:clamp(34px,9vw,42px)!important;line-height:1.05!important;letter-spacing:-.045em!important;margin-bottom:18px!important}
+  .breed-info-copy>p{font-size:15px!important;line-height:1.5!important;margin-bottom:24px!important}
+  .breed-info-benefits{gap:18px 10px!important;margin:0 auto 24px!important;max-width:350px!important}
+  .breed-info-benefits i{width:64px!important;height:64px!important;margin-bottom:9px!important;border-radius:18px!important;font-size:30px!important}
+  .breed-info-benefits b{font-size:15px!important;line-height:1.35!important}
+  .story-section{display:flex!important;flex-direction:column!important;align-items:stretch!important;min-height:0!important;padding:12px 22px 58px!important;overflow:hidden!important}
+  .story-copy{display:contents!important}
+  .story-copy>*{width:100%!important;max-width:100%!important;text-align:center!important}
+  .story-eyebrow{order:1;margin-bottom:10px!important}
+  .story-label{order:2;justify-content:center!important}
+  .story-copy h2{order:3;margin-top:0!important;font-size:clamp(36px,10vw,52px)!important;line-height:1.05!important;overflow-wrap:anywhere}
+  .story-copy p{order:4;font-size:16px!important;line-height:1.55!important}
+  .story-gallery{order:5;width:100%!important;height:600px!important;margin:10px auto 0!important}
+  .story-photo-main{width:80%!important;height:82%!important}
+  .story-photo-top,.story-photo-bottom{width:54%!important;height:56%!important}
+  .story-copy>a{order:6;position:relative;top:10px;width:min(88%,330px)!important;margin:42px auto 0!important;padding:13px 24px!important;gap:0!important;justify-content:center!important;font-size:14px!important;line-height:1.25!important;animation:storyButtonGlow 2.8s ease-in-out infinite}
+  .story-copy>a span,.story-copy>a b{display:none!important}
+  .story-photo-main{width:70%!important;height:78%!important}
+  .story-photo-top,.story-photo-bottom{width:46%!important;height:52%!important}
+}
+@media (max-width:767px){.breed-intro-benefits{display:none!important}}
