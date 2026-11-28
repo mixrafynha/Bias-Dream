@@ -102,9 +102,9 @@ export default function Footer(){return (
       <div className={"col-lg-2 col-md-3 col-6 footer-list-29 mt-md-0 mt-4"}>
         <ul>
           <h6 className={"footer-title-29"}>Legal</h6>
-          <li><Link to={"/politica-privacidade.html"}>Privacidade</Link></li>
-          <li><Link to={"/politica-cookies.html"}>Cookies</Link></li>
-          <li><Link to={"/termos-condicoes.html"}>Termos</Link></li>
+          <li><Link to={"/politica-privacidade.html"}><i className={"fas fa-shield-alt"}/> <span>Privacidade</span><b>›</b></Link></li>
+          <li><Link to={"/politica-cookies.html"}><i className={"fas fa-cookie-bite"}/> <span>Cookies</span><b>›</b></Link></li>
+          <li><Link to={"/termos-condicoes.html"}><i className={"fas fa-file-alt"}/> <span>Termos</span><b>›</b></Link></li>
         </ul>
       </div>
       <div className={"col-lg-2 col-md-6 col-sm-8 footer-list-29 mt-lg-0 mt-4 ps-lg-5"}>
